@@ -1,0 +1,2 @@
+Cabeçalho:
+Alteramos as cores e tamanho das opcoes aquando hover.

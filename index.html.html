@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrizauto | Nº1 em carros usados</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script type="text/javascript" src="logica.js"></script>
+
+    
+
+</head>
+<body>
+
+<header class="cabecalho"> 
+
+
+    <div class="logoconsumidor">
+
+    <a class="linklogo" href="">
+    <svg class="logo" width="191" height="26" viewBox="0 0 191 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7.164 6.21422C7.95922 6.20754 8.7503 6.32925 9.50673 6.57464C10.2801 6.8289 10.9987 7.22626 11.6253 7.74601C12.8943 6.70492 14.4913 6.14734 16.1326 6.17231C17.0605 6.17237 17.9792 6.35611 18.8358 6.71294C19.6883 7.06436 20.4694 7.56856 21.1408 8.20073C21.807 8.8259 22.3432 9.57646 22.7187 10.4093C23.1113 11.2724 23.3115 12.2105 23.3055 13.1586V23.2504C23.2954 23.9014 22.9986 24.5148 22.4944 24.9267C21.7403 25.6754 20.6113 25.8999 19.6281 25.4967C18.645 25.0936 17.9986 24.1411 17.9871 23.0785V13.2969C18.0039 12.8035 17.8068 12.3268 17.4465 11.9893C17.0889 11.6318 16.6004 11.4364 16.0949 11.4487C15.6363 11.4489 15.192 11.6081 14.8376 11.8992C14.4369 12.2298 14.2187 12.7323 14.2509 13.2508V23.0744C14.2663 23.7708 13.9879 24.4416 13.4839 24.9226C12.9968 25.4175 12.3301 25.6941 11.6357 25.6895C10.9657 25.6849 10.3221 25.4274 9.83363 24.9687C9.31988 24.5488 9.02212 23.9202 9.02268 23.2567V13.2969C9.01628 12.7987 8.80388 12.3253 8.43595 11.9893C7.71959 11.2969 6.58327 11.2969 5.86691 11.9893C5.50689 12.331 5.29607 12.8008 5.28018 13.2969V23.3007C5.23436 23.9426 4.94412 24.5426 4.46923 24.977C3.98921 25.4488 3.34009 25.7085 2.66713 25.6979C2.31291 25.7064 1.96047 25.6451 1.62987 25.5177C1.31113 25.3961 1.01978 25.2124 0.772825 24.977C0.521644 24.7168 0.322497 24.411 0.186094 24.076C0.0416749 23.7666 -0.0203996 23.4252 0.00588371 23.0848V13.1544C-0.00311404 12.2399 0.181115 11.3337 0.546514 10.4953C0.90968 9.66922 1.42748 8.92025 2.07202 8.28874C2.72518 7.65871 3.48879 7.15438 4.32464 6.80095C5.20879 6.43106 6.15959 6.24703 7.1179 6.26032" fill="#E41819"/>
+        <path d="M36.1419 6.26033C37.3241 6.38854 38.4712 6.74055 39.5219 7.29759C40.563 7.84397 41.4949 8.57698 42.2711 9.46011C43.0378 10.3406 43.6474 11.3465 44.0732 12.4336C44.5213 13.5517 44.7511 14.7452 44.7501 15.9498V23.0744C44.7601 23.7788 44.4643 24.453 43.9391 24.9226C43.3731 25.4928 42.5729 25.7653 41.7765 25.6592C40.9801 25.5531 40.2792 25.0805 39.8823 24.3819L39.5219 24.5621L39.2054 24.7424C38.5683 25.0321 37.9044 25.2588 37.2231 25.4192C36.4978 25.5778 35.7569 25.6538 35.0145 25.6455C33.1027 25.67 31.23 25.1036 29.6522 24.0236C28.1135 22.9805 26.8959 21.5292 26.136 19.8327C25.8688 19.2248 25.6583 18.5934 25.5074 17.9468C25.2137 16.626 25.2137 15.2568 25.5074 13.936C25.6583 13.2894 25.8688 12.658 26.136 12.0501C26.8802 10.3315 28.1002 8.86136 29.6522 7.81307C31.2325 6.73842 33.1035 6.17251 35.0145 6.19118H36.1419V6.26033ZM35.0145 20.4782C35.6188 20.477 36.2167 20.3544 36.7726 20.1177C37.3119 19.9019 37.8022 19.5798 38.2143 19.1705C38.6173 18.7534 38.9386 18.2643 39.1614 17.7288C39.4079 17.1605 39.5308 16.5462 39.5219 15.9267C39.5235 15.3371 39.4007 14.7537 39.1614 14.2147C38.6882 13.1247 37.8186 12.2552 36.7286 11.7819C36.1896 11.5426 35.6063 11.4198 35.0166 11.4215C34.4385 11.4208 33.867 11.5437 33.3402 11.7819C32.8028 12.0207 32.314 12.3567 31.8985 12.773C31.4806 13.1871 31.1444 13.6762 30.9074 14.2147C30.6682 14.7537 30.5453 15.3371 30.547 15.9267C30.5358 16.5322 30.6589 17.1326 30.9074 17.6848C31.1453 18.2228 31.4814 18.7117 31.8985 19.1265C32.3166 19.5397 32.8047 19.8753 33.3402 20.1177C33.8661 20.3586 34.4382 20.4816 35.0166 20.4782" fill="#E41819"/>
+        <path d="M49.6157 0.00117463C50.3243 -0.0204774 51.0092 0.258033 51.5016 0.768116C52.0156 1.28702 52.3207 1.97699 52.3586 2.70642V5.76581H60.0658C60.7833 5.74467 61.4735 6.04146 61.9517 6.57675C62.4225 7.09122 62.6801 7.76536 62.6725 8.46267C62.6606 9.16249 62.3685 9.82828 61.8616 10.3109C61.3993 10.8193 60.7466 11.113 60.0595 11.1218H52.3649V15.7172C52.366 16.3215 52.4886 16.9193 52.7253 17.4753C52.9469 18.0252 53.268 18.5296 53.6725 18.9631C54.0797 19.3892 54.5705 19.7266 55.1142 19.9542C55.683 20.1994 56.297 20.3222 56.9163 20.3146C57.5284 20.3346 58.1391 20.243 58.7184 20.0443C59.211 19.8564 59.6571 19.564 60.026 19.1873C60.5307 18.7192 61.1863 18.4472 61.8742 18.4203C62.5787 18.4204 63.2554 18.6956 63.7601 19.1873C64.0108 19.4131 64.2107 19.6895 64.3468 19.9982C64.4799 20.2973 64.5566 20.6184 64.5731 20.9454C64.5887 21.2813 64.5425 21.6172 64.4369 21.9365C64.3287 22.2617 64.1432 22.5558 63.8963 22.7936C62.9964 23.6702 61.9421 24.3729 60.7866 24.866C59.6461 25.3491 58.4189 25.5944 57.1803 25.587C55.8403 25.5884 54.5115 25.3441 53.2597 24.866C52.057 24.4069 50.9552 23.7179 50.0159 22.8376C49.0782 21.95 48.3291 20.8824 47.8136 19.6986C47.255 18.4187 46.9634 17.0382 46.9565 15.6417V2.51574C46.9426 1.82375 47.2403 1.16212 47.7675 0.713634C48.2758 0.258352 48.9333 0.00491914 49.6157 0.00117463Z" fill="#E41819"/>
+        <path d="M68.5886 25.6832C67.9149 25.6979 67.2643 25.4376 66.7865 24.9624C66.2917 24.4714 66.0018 23.8108 65.9756 23.1142V15.7235C65.9904 14.4637 66.2665 13.2207 66.7865 12.0732C67.286 10.9616 67.9889 9.95309 68.8589 9.09972C69.7449 8.23863 70.7839 7.55069 71.9225 7.0713C73.0941 6.57985 74.3451 6.30508 75.6147 6.26036C76.3104 6.24932 76.9795 6.52698 77.4629 7.0273C77.9471 7.52555 78.2351 8.18186 78.2739 8.8755C78.2952 9.57306 78.0158 10.2462 77.5069 10.7237C76.9996 11.2113 76.3246 11.4858 75.621 11.4906C74.436 11.481 73.2979 11.9529 72.4673 12.7982C72.0635 13.2147 71.7421 13.7039 71.5202 14.2399C71.2738 14.8083 71.1509 15.4226 71.1598 16.042V23.2986C71.1246 23.9445 70.8514 24.5544 70.3928 25.0106C69.891 25.4726 69.2261 25.7161 68.5446 25.6874" fill="#E41819"/>
+        <path d="M82.3811 0.177207C83.0638 0.16354 83.7197 0.442687 84.1832 0.944148C84.6613 1.43885 84.9209 2.10462 84.9041 2.79235C84.9209 3.48008 84.6613 4.14585 84.1832 4.64055C83.7197 5.14201 83.0638 5.42116 82.3811 5.40749C81.6846 5.41076 81.012 5.15367 80.4952 4.68665C79.9702 4.1644 79.6915 3.44393 79.7283 2.70434C79.7437 2.03135 80.0373 1.39484 80.5392 0.946243C81.0272 0.456263 81.6896 0.179718 82.3811 0.177207ZM82.3811 6.30645C83.049 6.29524 83.6888 6.57427 84.135 7.0713C84.5965 7.58026 84.8675 8.23333 84.902 8.9195V23.1687C84.9243 23.8354 84.6808 24.4836 84.2251 24.9708C83.7369 25.4696 83.0746 25.7602 82.3769 25.7817C81.7328 25.8001 81.1053 25.5757 80.6188 25.1531C80.1083 24.6827 79.7877 24.0416 79.7178 23.351V8.78329C79.7627 8.12088 80.0714 7.50416 80.5748 7.0713C81.07 6.62333 81.7094 6.3676 82.3769 6.35045" fill="#E41819"/>
+        <path d="M104.283 6.2163C104.963 6.21377 105.615 6.49109 106.085 6.98325C106.56 7.46451 106.835 8.10896 106.852 8.78536C106.863 9.48099 106.585 10.1501 106.085 10.6336L105.678 11.0401L105.272 11.4466L100.811 15.9079L96.3032 20.3691H104.281C105.731 20.4181 106.875 21.6211 106.85 23.0723C106.826 24.4812 105.69 25.6178 104.281 25.6413H89.9498C89.2693 25.6438 88.6176 25.3665 88.1477 24.8744C87.6411 24.4145 87.361 23.7561 87.3807 23.0723C87.3155 22.3903 87.5841 21.719 88.1016 21.2702L97.8811 11.4466H89.9498C89.2693 11.409 88.6271 11.12 88.1477 10.6357C87.6052 10.182 87.3188 9.49186 87.3807 8.78745C87.361 8.10358 87.6411 7.44525 88.1477 6.98535C88.6111 6.48389 89.2671 6.20474 89.9498 6.21841L104.283 6.2163Z" fill="#E41819"/>
+        <path d="M119.741 6.26033C120.923 6.38859 122.07 6.7406 123.121 7.29759C124.162 7.84397 125.094 8.57698 125.87 9.46011C126.636 10.3406 127.246 11.3464 127.672 12.4336C128.12 13.5516 128.35 14.7452 128.349 15.9498V23.0744C128.353 23.7776 128.058 24.4494 127.538 24.9226C126.972 25.4928 126.172 25.7653 125.375 25.6592C124.579 25.5531 123.878 25.0805 123.481 24.3819L123.121 24.5621L122.804 24.7424C122.167 25.0321 121.503 25.2588 120.822 25.4192C120.096 25.5779 119.356 25.6538 118.613 25.6455C116.701 25.67 114.829 25.1036 113.251 24.0236C111.712 22.9804 110.495 21.5292 109.735 19.8327C109.467 19.2247 109.257 18.5934 109.106 17.9468C108.812 16.626 108.812 15.2568 109.106 13.936C109.257 13.2894 109.467 12.658 109.735 12.0501C110.479 10.3315 111.699 8.86136 113.251 7.81307C114.831 6.73842 116.702 6.17251 118.613 6.19118H119.741V6.26033ZM118.569 20.388C119.173 20.3869 119.771 20.2643 120.327 20.0276C120.867 19.8118 121.357 19.4897 121.769 19.0804C122.172 18.6633 122.493 18.1743 122.716 17.6387C122.963 17.0703 123.085 16.4561 123.076 15.8366C123.078 15.247 122.955 14.6636 122.716 14.1246C122.243 13.0346 121.373 12.1651 120.283 11.6918C119.744 11.4525 119.161 11.3297 118.571 11.3313C117.993 11.3307 117.422 11.4536 116.895 11.6918C116.357 11.9306 115.869 12.2666 115.453 12.6829C115.035 13.097 114.699 13.5861 114.462 14.1246C114.223 14.6636 114.1 15.247 114.102 15.8366C114.09 16.4421 114.214 17.0425 114.462 17.5947C114.7 18.1327 115.036 18.6216 115.453 19.0364C115.875 19.4339 116.363 19.7545 116.895 19.9836C117.421 20.2245 117.993 20.3475 118.571 20.344" fill="#E41819"/>
+        <path d="M133.035 6.17023C134.51 6.19425 135.694 7.39749 135.694 8.87338V15.9498C135.688 16.5547 135.811 17.1539 136.054 17.7079C136.514 18.7811 137.37 19.6364 138.443 20.0967C138.997 20.3397 139.596 20.4626 140.201 20.4571C140.775 20.4594 141.344 20.352 141.877 20.1407C142.408 19.9299 142.897 19.6246 143.319 19.2397C143.74 18.863 144.078 18.4027 144.31 17.8881C144.551 17.3496 144.674 16.7659 144.671 16.1761V8.82938C144.662 8.34743 144.804 7.87473 145.077 7.4778L145.257 7.25149L145.484 7.02518C145.935 6.50234 146.595 6.20557 147.286 6.21423C148 6.21072 148.683 6.50453 149.172 7.02518C149.655 7.46831 149.946 8.08262 149.983 8.73718V15.9477C149.991 17.2493 149.73 18.5385 149.216 19.7342C148.221 22.0652 146.365 23.9219 144.034 24.9163C142.824 25.4343 141.519 25.6954 140.203 25.6832C138.936 25.7356 137.673 25.5044 136.507 25.0064C134.168 24.0372 132.284 22.2176 131.235 19.9144C130.698 18.7599 130.421 17.5017 130.424 16.2285V8.82938C130.407 8.14164 130.666 7.47588 131.144 6.98117C131.627 6.47424 132.293 6.18211 132.993 6.17023" fill="#E41819"/>
+        <path d="M154.802 0.00117463C155.511 -0.0204774 156.196 0.258033 156.688 0.768116C157.202 1.28714 157.507 1.97703 157.545 2.70642V5.76581H165.252C165.97 5.74467 166.66 6.04146 167.138 6.57675C167.609 7.09122 167.867 7.76536 167.859 8.46267C167.847 9.16249 167.555 9.82828 167.048 10.3109C166.586 10.8193 165.933 11.113 165.246 11.1218H157.551V15.7172C157.552 16.3215 157.675 16.9193 157.912 17.4753C158.133 18.0252 158.454 18.5296 158.859 18.9631C159.266 19.3892 159.757 19.7266 160.301 19.9542C160.869 20.1994 161.483 20.3222 162.103 20.3146C162.715 20.3346 163.326 20.243 163.905 20.0443C164.398 19.8565 164.844 19.5641 165.212 19.1873C165.717 18.7192 166.373 18.4472 167.061 18.4203C167.765 18.4204 168.442 18.6956 168.947 19.1873C169.197 19.4131 169.397 19.6895 169.533 19.9982C169.666 20.2973 169.743 20.6184 169.76 20.9454C169.775 21.2813 169.729 21.6173 169.623 21.9365C169.515 22.2618 169.33 22.5559 169.083 22.7936C168.183 23.6702 167.129 24.3729 165.973 24.866C164.833 25.3489 163.607 25.5941 162.369 25.587C161.029 25.5884 159.7 25.3441 158.448 24.866C157.245 24.4071 156.142 23.7181 155.202 22.8376C154.265 21.95 153.516 20.8824 153 19.6986C152.441 18.4186 152.15 17.0382 152.143 15.6417V2.51574C152.129 1.82375 152.427 1.16212 152.954 0.713634C153.462 0.258352 154.12 0.00491914 154.802 0.00117463Z" fill="#E41819"/>
+        <path d="M180.805 6.57674C182.091 6.57178 183.365 6.83289 184.545 7.34368C185.705 7.8292 186.761 8.53272 187.655 9.4161C188.549 10.3114 189.268 11.3661 189.774 12.5258C190.806 14.9438 190.806 17.6787 189.774 20.0967C189.277 21.2369 188.575 22.2755 187.701 23.1603C185.88 24.997 183.394 26.0207 180.807 25.9996C179.51 26.0105 178.223 25.7656 177.021 25.2788C175.86 24.8146 174.803 24.1252 173.911 23.2504C170.142 19.4503 170.122 13.3282 173.867 9.50411C174.764 8.62415 175.819 7.92108 176.977 7.43169C178.188 6.90778 179.488 6.61702 180.807 6.57465L180.805 6.57674ZM180.807 11.8468C180.218 11.8504 179.636 11.973 179.095 12.2073C178.559 12.4301 178.07 12.7514 177.653 13.1544C177.231 13.5648 176.894 14.0548 176.662 14.5961C176.417 15.1648 176.294 15.7789 176.302 16.3982C176.298 17.003 176.42 17.6019 176.662 18.1563C176.899 18.6948 177.235 19.1839 177.653 19.598C178.069 20.0143 178.558 20.3503 179.095 20.5891C179.634 20.8297 180.217 20.9525 180.807 20.9496C181.412 20.955 182.011 20.8321 182.565 20.5891C183.106 20.3571 183.596 20.0202 184.007 19.598C184.406 19.1777 184.727 18.6894 184.954 18.1563C185.197 17.6023 185.32 17.0031 185.314 16.3982C185.295 15.219 184.827 14.0915 184.007 13.2445C183.175 12.3959 182.041 11.9101 180.853 11.8929" fill="#E41819"/>
+        </svg>
+
+        <img class="escolhaconsumidor" src="./escolha do consumidro 2022.png" alt="">
+        <img class="consumidor" src="./consumidor.png" alt="">
+    </a>
+    </div>
+
+
+    <div class="menuopcoes">
+        <a class="opcoes" href=" https://www.matrizauto.pt/pt/carro-usado/" style="text-decoration:none">Viaturas</a>
+        <a class="opcoes" href="https://vendaoseucarro.matrizauto.pt/" style="text-decoration:none">Vender o Meu Carro</a>
+        <a class="opcoes" href="https://www.matrizauto.pt/pt/noticias/" style="text-decoration:none">Notícias</a>
+        <a class="opcoes" href="https://www.matrizauto.pt/pt/matrizauto/onde-estamos/" style="text-decoration:none">Contactos & Lojas</a>
+    </div>
+
+        <div class="icons">
+        <svg class="iconsopcoes" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 18C15.6792 15.4661 13.2828 14 10 14C6.71716 14 4.32078 15.4661 3 18M15 8C15 10.7614 12.7614 13 10 13C7.23858 13 5 10.7614 5 8C5 5.23858 7.23858 3 10 3C12.7614 3 15 5.23858 15 8Z" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+
+        <svg class="iconsopcoes" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+
+        <svg class="iconsopcoes" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2835 6.49193C12.1316 6.67643 11.8684 6.67643 11.7169 6.49193C7.99988 1.96456 3 4.09793 3 8.95568C3 13.4921 10.4722 18.7912 11.7787 19.6829C11.91 19.7722 12.09 19.7729 12.2213 19.6829C13.5274 18.7912 21 13.4921 21 8.95568C21 4.09868 16.0001 1.96418 12.2835 6.49193Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+        <svg class="iconsopcoes" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.5735 5.27271L18.1038 4.74238C17.9632 4.60173 17.7724 4.52271 17.5735 4.52271C17.3746 4.52271 17.1838 4.60173 17.0432 4.74238L17.5735 5.27271ZM16.8235 10.6631C16.8235 11.0773 17.1593 11.4131 17.5735 11.4131C17.9877 11.4131 18.3235 11.0773 18.3235 10.6631L16.8235 10.6631ZM15.5751 6.21041C15.2822 6.5033 15.2822 6.97818 15.5751 7.27107C15.868 7.56396 16.3429 7.56396 16.6358 7.27107L15.5751 6.21041ZM18.5112 7.27107C18.8041 7.56396 19.279 7.56396 19.5719 7.27107C19.8647 6.97818 19.8647 6.5033 19.5719 6.21041L18.5112 7.27107ZM16.8235 5.27271L16.8235 10.6631L18.3235 10.6631L18.3235 5.27271L16.8235 5.27271ZM17.0432 4.74238L15.5751 6.21041L16.6358 7.27107L18.1038 5.80304L17.0432 4.74238ZM19.5719 6.21041L18.1038 4.74238L17.0432 5.80304L18.5112 7.27107L19.5719 6.21041Z" fill="black"/>
+            <path d="M13.987 10.6631L13.4567 11.1934C13.5974 11.3341 13.7881 11.4131 13.987 11.4131C14.186 11.4131 14.3767 11.3341 14.5174 11.1934L13.987 10.6631ZM14.737 5.27271C14.737 4.85849 14.4013 4.52271 13.987 4.52271C13.5728 4.5227 13.237 4.85849 13.237 5.2727L14.737 5.27271ZM15.9854 9.72538C16.2783 9.43249 16.2783 8.95761 15.9854 8.66472C15.6925 8.37183 15.2176 8.37183 14.9247 8.66472L15.9854 9.72538ZM13.0494 8.66472C12.7565 8.37183 12.2816 8.37183 11.9887 8.66472C11.6958 8.95761 11.6958 9.43249 11.9887 9.72538L13.0494 8.66472ZM14.737 10.6631L14.737 5.27271L13.237 5.2727L13.237 10.6631L14.737 10.6631ZM14.5174 11.1934L15.9854 9.72538L14.9247 8.66472L13.4567 10.1327L14.5174 11.1934ZM11.9887 9.72538L13.4567 11.1934L14.5174 10.1327L13.0494 8.66472L11.9887 9.72538Z" fill="black"/>
+            <circle cx="16" cy="8" r="6" stroke="black" stroke-width="1.5"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.21333 18.5803V20.644C6.21333 20.9295 5.98196 21.1609 5.69685 21.1609H3.63276C3.34719 21.1609 3.11719 20.9295 3.11719 20.644V18.5803H6.21333Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6632 18.5803V20.644C16.6632 20.9295 16.8945 21.1609 17.1792 21.1609H19.2433C19.5284 21.1609 19.7598 20.9295 19.7598 20.644V18.5803H3.11719H16.6632Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.83593 11.5992C5.83593 11.5992 4.33067 11.5992 4.02962 11.5992C3.38424 11.5992 2.91012 12.966 3.01442 13.0958C3.11143 13.2165 3.25216 13.2907 3.4389 13.2907C3.82557 13.2907 4.72873 13.2907 4.72873 13.2907C4.72873 13.2907 3.11644 14.9035 3.11644 16.1291C3.11644 17.3542 3.11644 18.5803 3.11644 18.5803L5.83593 11.5992Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M19.7599 18.5802V16.1289C19.7599 15.8777 19.6921 15.6103 19.5844 15.3438L18.8691 15.6933L19.7599 18.5802Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9.28579 13.2906H5.28125C5.28125 13.2906 6.27641 10.2163 6.51279 9.59192C6.74962 8.96886 7.0074 8.625 7.80307 8.625C7.99902 8.625 7.99902 8.625 7.99902 8.625" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.35131 16.3H6.56641H8.35131Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2552 16.3H14.4707H16.2552Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.44199 13.2882L7.95312 11.8645L9.44199 13.2882Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+        <svg class="menu" width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1H12M1 5H14M1 9H10" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+    </div>
+        
+
+</header>
+
+
+
+<a  href="https://www.matrizauto.pt/pt/oportunidades-matrizauto/"><img class="imagemdefundo" src="./homepage_desktop_1920x630_131537173763849c3bc2f92.png" alt=""></a>
+
+
+<main class="imgplusform wrap">
+
+   
+
+
+<div class="forms  wrap">
+
+    <form class="formcompra wrap" action="">
+
+            <nav class="comprar">
+                <h1 class="shop">Comprar</h1>
+                
+            </nav>
+
+            <div class="items itemscompra">
+                <select name="Marca" id="formopcoes">
+                    <option value="">Marca</option>
+                    <option value="">ALFA ROMEO</option>
+                    <option value="">AUDI</option>
+                    <option value="">BMW</option>
+                    <option value="">CITROEN</option>
+                    <option value="">DACIA</option>
+                    <option value="">DS</option>
+                    <option value="">FIAT</option>
+                    <option value="">FORD</option>
+                    <option value="">HONDA</option>
+                    <option value="">HYUNDAI</option>
+                    <option value="">ISUZU</option>
+                    <option value="">JAGUAR</option>
+                    <option value="">JEEP</option>
+                    <option value="">KIA</option>
+                    <option value="">LAND ROVER</option>
+                    <option value="">LEXUS</option>
+                    <option value="">MAZDA</option>
+                    <option value="">MERCEDES-BENZ</option>
+                    <option value="">MINI</option>
+                    <option value="">MITSUBISHI</option>
+                    <option value="">NISSAN</option>
+                    <option value="">OPEL</option>
+                    <option value="">PEUGEOT</option>
+                    <option value="">RENAULT</option>
+                    <option value="">SEAT</option>
+                    <option value="">SKODA</option>
+                    <option value="">SMART</option>
+                    <option value="">TOYOTA</option>
+                    <option value="">VOLKSWAGEN</option>
+                    <option value="">VOLVO</option>
+                </select>
+
+                <select name="Modelo" id="modelo" disabled="disabled">
+                    <option value="">Modelo</option>
+                </select>
+
+                    <br>
+            
+                <select name="Quilómetros até" id="formopcoes">
+                    <option value="">Nº de km:</option>
+                    <option value="">0</option>
+                    <option value="">10000</option>
+                    <option value="">25000</option>
+                    <option value="">50000</option>
+                    <option value="">75000</option>
+                    <option value="">100000</option>
+                    <option value="">150000</option>
+                    <option value="">200000</option>
+                    <option value="">250000</option>
+                    <option value="">300000</option>
+                    <option value="">350000</option>
+                    <option value="">400000</option>
+                </select>
+
+                <select name="Ano até" id="formopcoes">
+                    <option value="">Ano até</option>
+                    <option value="">2022</option>
+                    <option value="">2021</option>
+                    <option value="">2020</option>
+                    <option value="">2019</option>
+                    <option value="">2018</option>
+                    <option value="">2017</option>
+                    <option value="">2016</option>
+                    <option value="">2015</option>
+                    <option value="">2014</option>
+                    <option value="">2013</option>
+                    <option value="">2012</option>
+                    <option value="">2011</option>
+                    <option value="">2010</option>
+                </select>
+
+                <br> 
+
+                <select name="Combustível" id="formopcoes">
+                    <option value="">Combustível</option>
+                    <option value="">Diesel</option>
+                    <option value="">Gasolina</option>
+                    <option value="">Elétrico</option>
+                    <option value="">GPL</option>
+                    <option value="">Híbrido (Diesel)</option>
+                    <option value="">Híbrido (Gasolina)</option>
+                    <option value="">Mild Hybrid</option>
+                </select>
+
+                <select name="Transmição" id="formopcoes">
+                    <option value="">Transmição</option>
+                    <option value="">Manual</option>
+                    <option value="">Automático</option>
+
+                </select>
+            </div>
+
+            <input class="procurar" type="submit" value="Procurar">
+
+
+
+    </form>
+
+
+
+
+    <script type="text/javascript" src="logica.js"></script>
+
+    <div class="venderall ">
+        <div id="itemsvenda" class="itemsvenda items">
+
+            <h1 id="titulovender wrap">Vender</h1>
+
+            <select name="Marca" id="formopcoes">
+                <option value="">Marca</option>
+                <option value="">ALFA ROMEO</option>
+                <option value="">AUDI</option>
+                <option value="">BMW</option>
+                <option value="">CITROEN</option>
+                <option value="">DACIA</option>
+                <option value="">DS</option>
+                <option value="">FIAT</option>
+                <option value="">FORD</option>
+                <option value="">HONDA</option>
+                <option value="">HYUNDAI</option>
+                <option value="">ISUZU</option>
+                <option value="">JAGUAR</option>
+                <option value="">JEEP</option>
+                <option value="">KIA</option>
+                <option value="">LAND ROVER</option>
+                <option value="">LEXUS</option>
+                <option value="">MAZDA</option>
+                <option value="">MERCEDES-BENZ</option>
+                <option value="">MINI</option>
+                <option value="">MITSUBISHI</option>
+                <option value="">NISSAN</option>
+                <option value="">OPEL</option>
+                <option value="">PEUGEOT</option>
+                <option value="">RENAULT</option>
+                <option value="">SEAT</option>
+                <option value="">SKODA</option>
+                <option value="">SMART</option>
+                <option value="">TOYOTA</option>
+                <option value="">VOLKSWAGEN</option>
+                <option value="">VOLVO</option>
+            </select>
+
+            <select name="Modelo" id="modelo" disabled="disabled">
+                <option value="">Modelo</option>
+            </select>
+
+                <br>
+        
+            <input id="kmvenda" type="text" placeholder="Quilometragem">
+
+            <input id="anovenda" type="text" placeholder="Ano da matrícula">
+
+            <br> 
+
+            <input id="precoaquisicao" class="precovenda" type="text" placeholder="Preço de Aquisição">
+
+            <button onclick="calcular()" class="calcular">Calcular</button>
+
+
+            <div class="precofinal">
+
+                <span class="estados">
+                    <h2 class="tituloprecofinal">Mau Estado</h2>
+                    <span id="mauestado" class="valormauestado valor" type="text"></span>
+                </span>
+
+                <span class="estados">
+                    <h2 class="tituloprecofinal">Bom Estado</h2>
+                    <span id="bomestado"  class="valor valorbomestado" type="text"></span>
+                </span>
+
+                <span class="estados">
+                    <h2 class="tituloprecofinal muitobomestado">Muito Bom Estado</h2>
+                    <span id="muitobomestado" class="valor valormuitobomestado" type="text"></span>
+                </span>
+            </div>
+
+
+    </div>
+
+   
+</main>
+
+
+</div>
+
+
+</main>
+
+
+
+
+<div class="imagens wrap">
+    <img class="imgpublicidade publicidade1" src="48 meses de garantia.png" alt="">
+    <img class="imgpublicidade" src="matriz auto o shopping dos carros.png" alt="">
+    <img class="imgpublicidade" src="10 dicas para poupar combustivel.png" alt="">
+</div>
+
+
+
+
+
+<div class="carrosemdestaque wrap">
+            
+    <h1 class="titlecarrosemdestaque">Carros em destaque</h1>
+
+    <a class="vermaiscarros" href="https://www.matrizauto.pt/pt/carro-usado/"> > Ver mais carros usados</a>
+    
+</div>
+
+
+<script src="logica.js"   defer></script>
+
+
+<div class="carrosvenda wrap">
+    <div class="carro1" id="carro">
+        <a class="linkcarro" target="_blank" href="https://www.matrizauto.pt/pt/carro-usado/renault/captur/captur-1-5-dci-exclusive/68002/"><img id="imgcarro1" class="carro1 imgcarro" src="carro1.png" alt="">
+        
+           <div class="textocarro">
+            <h1 class="titulocarro">Renault Captur</h1>
+        
+            <span class="descricaocarro">Captur 1.5 Dci Exclusive</span>
+            
+            <div class="specs">
+            <span class="spec">Diesel</span>
+            <span class="spec">Manual</span>
+            <span class="spec">2018</span>
+            <span class="spec">72.358kms</span>
+            </div>
+            
+            <span class="comprarapronto">Comprar a pronto</span>
+            
+            <span class="precocarros">18.499€</span>
+            
+           
+
+            
+
+           </div>
+        
+        
+
+        </a>
+      
+        <button onclick="imagegone1()" class="emdestaque" id="emdestaque">Em Destaque</button>
+                
+    </div>
+
+
+    <div class="carro2" id="carro">
+        <a class="linkcarro" target="_blank" href="https://www.matrizauto.pt/pt/carro-usado/renault/captur/captur-0-9-tce-exclusive/70401/"><img id="imgcarro2" class="imgcarro" src="carro2.png" alt="">
+        
+           <div class="textocarro">
+            <h1 class="titulocarro">Renault Captur</h1>
+        
+            <span class="descricaocarro">Captur 0.9 Tce Exclusive</span>
+            
+            <div class="specs">
+            <span class="spec">Gasolina</span>
+            <span class="spec">Manual</span>
+            <span class="spec">2017</span>
+            <span class="spec">67.078kms</span>
+            </div>
+            
+            <span class="comprarapronto">Comprar a pronto</span>
+            
+            <span class="precocarros">15.999€</span>
+            
+         
+
+           
+
+           </div>
+        
+        </a>
+
+        <button onclick="imagegone2()" id="emdestaque" class="emdestaque">Em Destaque</button>
+
+    </div>
+
+    <div class="carro3" id="carro">
+        <a class="linkcarro" target="_blank" href="https://www.matrizauto.pt/pt/carro-usado/renault/megane/megane-sport-tourer-1-5-dci-bose-edition/72224/"><img id="imgcarro3"  class="imgcarro" src="carro3.png" alt="">
+        
+           <div class="textocarro">
+            <h1 class="titulocarro">Renault Mégane</h1>
+            
+            <span class="descricaocarro">Mégane Sport Tourer 1.5 Dci Bose Edition</span>
+            
+            <div class="specs">
+            <span class="spec">Diesel</span>
+            <span class="spec">Manual</span>
+            <span class="spec">2020</span>
+            <span class="spec">30.094kms</span>
+            </div>
+            
+            <span class="comprarapronto">Comprar a pronto</span>
+            
+            <span class="precocarros">25.399€</span>
+            
+           
+
+
+           </div>
+        
+        </a>
+
+        <button onclick="imagegone3()" id="emdestaque" class="emdestaque">Em Destaque</button>
+
+    </div>
+
+
+    <div class="carro4" id="carro">
+        <a class="linkcarro" target="_blank" href="https://www.matrizauto.pt/pt/carro-usado/renault/clio/clio-1-0-tce-intens/74207/"><img id="imgcarro4" class="imgcarro" src="carro4.png" alt="">
+        
+           <div class="textocarro">
+            <h1 class="titulocarro">Renault Clio</h1>
+            
+            <span class="descricaocarro">Clio 1.0 Tce Intens</span>
+            
+            <div class="specs">
+            <span class="spec">Gasolina</span>
+            <span class="spec">Manual</span>
+            <span class="spec">2021</span>
+            <span class="spec">47.113kms</span>
+            </div>
+            
+            <span class="comprarapronto">Comprar a pronto</span>
+            
+            <span class="precocarros">16.899€</span>
+            
+           
+
+            
+
+           </div>
+        </a>
+        
+        <button onclick="imagegone4()" id="emdestaque" class="emdestaque">Em Destaque</button>
+
+    </div>
+
+</div>
+
+
+<div class="fullfinanciamento">
+
+    <div class="financiamentoitems wrap">
+
+        <button onclick="financiamento()" class="buttonfinanciamento ">Financiamento</button>
+    
+    </div>
+
+
+<div id="escondebutton">
+    <div class="financiamento" id="esconder2">
+       
+
+
+        <div class="slidecontainer">
+            <p>Valor do automovél: <span id="valorautomovel"></span></p>
+            <input type="range" min="0" max="100000" value="5000" step="250" class="slider" id="autovalor">
+        </div>
+
+       
+
+        <div class="slidecontainer">
+            <p>Entrada inicial: <span id="valorentrada"></span></p>
+            <input type="range" min="0" max="30000" value="5000" step="250" class="slider" id="entrada">
+        </div>
+
+        <div class="slidecontainer">
+            <p>Meses: <span id="valormeses"></span></p>
+            <input type="range" min="1" max="120" value="42" step="1" class="slider" id="meses">
+        </div>
+
+        <button onclick="obterSimulacao()">SIMULAR</button>
+
+    </div>
+
+    <div class="resultado" id="esconder3">
+        <div class="flex-container-resultado">
+            <div>
+                <h2 class="resultadotitle">Opção 1</h2>
+                <p id="info-fin1"></p>
+            </div>
+            <div>
+                <h2 class="resultadotitle">Opção 2</h2>
+                <p id="info-fin2"></p>
+            </div>
+            <div>
+                <h2 class="resultadotitle">Opção 3</h2>
+                <p id="info-fin3"></p>
+            </div>  
+        </div>
+    </div>
+
+    </div>
+</div>
+
+<div class="allvantagens wrap">
+
+<h1 class="titulovantagens">Vantagens Matrizauto</h1>
+
+
+
+<div class="vantagens ">
+
+
+   
+     <span id="120pontos">
+    <a class="linkvantagens" target="_blank" href=""><img class="imgvantagens" src="certeficaçao120pontos.png" alt="">
+    <h2 class="titlevantagens" >Certeficação 120 pontos</h2>
+    </a>
+</span>
+
+<span id="satisfaçaoedevolucao">
+    <a class="linkvantagens" target="_blank" href=""><img class="imgvantagens" src="satisfacaooudevolucao.png" alt="">
+    <h2 class="titlevantagens">Satisfação ou Devolução</h2>
+     </a>
+</span>
+
+
+   
+    <span id="garantia3anos">
+    <a class="linkvantagens" target="_blank" href=""><img class="imgvantagens" src="garantiaate3anos.png" alt="">
+    <h2 class="titlevantagens">Garantia até 3 anos</h2>
+    </a>
+</span>
+
+<span id="tudonumlocalso">
+    <a class="linkvantagens" target="_blank" href=""><img class="imgvantagens" src="tudonumlocalso.png" alt="">
+    <h2 class="titlevantagens">Tudo num local só</h2>
+    </a>
+</span>
+
+    
+
+
+</div>
+
+
+</div>
+
+
+<div class="matrizautoeco wrap">
+
+    <a class="matrizautoecolink" href="">
+        <img class="imagemmatrizautoeco" src="matrizautoeco.png" alt="">
+    <span class="infomatrizautoeco">
+        <h2 class="titlematrizautoeco">Matrizauto Eco</h2>  <br>
+        <p class="textmatrizautoeco">A evolução tecnológica verificada nos últimos anos em relação à autonomia e preço das baterias, a melhor eficiência dos tempos de carga, maior potência, levam à consideração de compra de veículos 100% elétricos, como alternativa a um veículo novo a combustão.
+            Se está a pensar comprar um veículo elétrico, mas não sabe as implicações positivas que esta compra vai causar na sua vida ou ainda desconhece o conceito de carros elétricos e as suas vantagens, o espaço Matrizauto Eco vai ajuda-lo.</p>
+    
+        <span class="ecolinkbutton">Ver carros elétricos</span>
+
+    </span>
+    </a>
+
+</div>
+
+
+
+
+
+<div class="locations wrap">
+
+
+<h1 class="titlesaibaonde ">Saiba onde nos encontrar</h1>
+
+
+
+<div class="lojaslocalizacoes ">
+
+    <span class="localizacao">
+        <img class="imagemlocalizacao" src="porto.png" alt="">
+        <p class="cidade">Porto</p>
+        <a class="linktelefone" href="tel:226 156 410*"><svg class="telefone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>226 156 410</a>
+        <span class="adress">
+            <svg class="simboloadress" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z"/></svg>
+            <span class="morada">Rua de Santa Luzia Nº 1022 | 4250-415 Porto</span> 
+        </span>
+        <span class="horario">Seg a Sex: 09h - 21h | Fins-de-Semana e Feriados: 9h - 21h</span>
+        <a class="maps" href="https://www.google.com/maps/place/Matrizauto+Porto/@41.1787587,-8.6257593,17z/data=!3m1!4b1!4m5!3m4!1s0xd2465f2e5103151:0x5fd92e3bf5fda1b!8m2!3d41.1787587!4d-8.6235706">
+            <img class="imagegps" src="maps.jpg" alt="">
+            <span>Ir para o Google Maps</span>
+        </a>
+        <a class="waze" href="https://www.waze.com/pt-PT/live-map/directions?navigate=yes&to=ll.41.1787587%2C-8.6257593">
+            <img class="imagegps" src="waze.jpg" alt="">
+            <span>Ir para a Waze</span>
+        </a>
+    </span>
+
+
+
+
+    <span class="localizacao sintra">
+        <img class="imagemlocalizacao" src="sintra.png" alt="">
+        <p class="cidade">Sintra</p>
+        <a class="linktelefone" href="tel:219 269 600*"><svg class="telefone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>226 156 410</a>
+        <span class="adress">
+            <svg class="simboloadress" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z"/></svg>
+            <span class="morada">IC19, SAÍDA 13 | 2725-397 Mem Martins</span> 
+        </span>
+        <span class="horario">Seg a Sex: 09h - 22h | Fins-de-Semana e Feriados: 9h - 21h</span>
+        <a class="maps" href="https://www.google.pt/maps/place/Matrizauto+-+O+Shopping+dos+Carros/@38.779345,-9.3527337,17z/data=!3m1!4b1!4m5!3m4!1s0xd1ecfe1ff30ecb7:0x4842dee061867491!8m2!3d38.779345!4d-9.350545?hl=pt-PT">
+            <img class="imagegps" src="maps.jpg" alt="">
+            <span>Ir para o Google Maps</span>
+        </a>
+        <a class="waze" href="https://www.waze.com/pt-PT/live-map/directions?navigate=yes&to=ll.38.779345%2C-9.3527337">
+            <img class="imagegps" src="waze.jpg" alt="">
+            <span>Ir para a Waze</span>
+        </a>
+    </span>
+
+
+
+    <span class="localizacao aveiro">
+        <img class="imagemlocalizacao" src="aveiro.png" alt="">
+        <p class="cidade">Aveiro</p>
+        <a class="linktelefone" href="tel:234 249 960*"><svg class="telefone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>234 249 960</a>
+        <span class="adress">
+            <svg class="simboloadress" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z"/></svg>
+            <span class="morada">Aveiro Retail Park | Lojas nº C, D, E1 e E2 | 3800-055 Aveiro</span> 
+        </span>
+        <span class="horario">Seg a Sex: 10h - 22h | Fins-de-Semana e Feriados: 10h - 22h</span>
+        <a class="maps" href="https://www.google.pt/maps/place/Matrizauto/@40.6438003,-8.6084139,17z/data=!3m1!4b1!4m5!3m4!1s0xd239884be9042a7:0xd877cc4a68e4eae1!8m2!3d40.6438003!4d-8.6062252?hl=pt-PT">
+            <img class="imagegps" src="maps.jpg" alt="">
+            <span>Ir para o Google Maps</span>
+        </a>
+        <a class="waze" href="https://www.waze.com/pt-PT/live-map/directions?navigate=yes&to=ll.40.6438003%2C-8.6084139">
+            <img class="imagegps" src="waze.jpg" alt="">
+            <span>Ir para a Waze</span>
+        </a>
+    </span>
+
+
+
+
+    <span class="localizacao viseu">
+        <img class="imagemlocalizacao" src="viseu.png" alt="">
+        <p class="cidade">Viseu</p>
+        <a class="linktelefone" href="tel:255 788 198*"><svg class="telefone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>255 788 198</a>
+        <span class="adress">
+            <svg class="simboloadress" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z"/></svg>
+            <span class="morada">Viseu Retail Park | Avenida Forte Da Gama, Fragosela | 3505-639 Viseu</span> 
+        </span>
+        <span class="horario">Seg a Sex: 10h - 21h | Fins-de-Semana e Feriados: 10h - 21h</span>
+        <a class="maps" href="https://www.google.pt/maps/place/Continente+Modelo/@40.6339023,-7.8459533,2242m/data=!3m1!1e3!4m5!3m4!1s0xd2334422ada3ca7:0xe9899e3ac5a57e04!8m2!3d40.6351034!4d-7.8445354">
+            <img class="imagegps" src="maps.jpg" alt="">
+            <span>Ir para o Google Maps</span>
+        </a>
+        <a class="waze" href="https://www.waze.com/pt-PT/live-map/directions?navigate=yes&to=ll.40.633873%2C-7.843755">
+            <img class="imagegps" src="waze.jpg" alt="">
+            <span>Ir para a Waze</span>
+        </a>
+    </span>
+
+</div>
+
+
+</div>
+
+
+<footer>
+
+    <div class="rodape wrap">
+        
+            <div class="leftrodape">
+                <svg class="logofooter" width="147" height="20" viewBox="0 0 147 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.51077 4.78017C6.12248 4.77503 6.731 4.86865 7.31287 5.05742C7.90774 5.253 8.46055 5.55866 8.9425 5.95847C9.91871 5.15763 11.1472 4.72872 12.4097 4.74793C13.1235 4.74798 13.8302 4.88932 14.489 5.1638C15.1448 5.43412 15.7457 5.82197 16.2621 6.30825C16.7746 6.78915 17.1871 7.36651 17.4759 8.00719C17.778 8.67105 17.932 9.39267 17.9273 10.122V17.8849C17.9195 18.3857 17.6913 18.8575 17.3034 19.1744C16.7233 19.7503 15.8549 19.923 15.0986 19.6129C14.3423 19.3027 13.8451 18.5701 13.8362 17.7527V10.2284C13.8491 9.84883 13.6975 9.48219 13.4204 9.22256C13.1453 8.94755 12.7695 8.79725 12.3807 8.80669C12.0279 8.80686 11.6861 8.92934 11.4135 9.15325C11.1053 9.40753 10.9375 9.79409 10.9622 10.1929V17.7495C10.9741 18.2852 10.7599 18.8012 10.3723 19.1712C9.99757 19.5519 9.48472 19.7647 8.95056 19.7612C8.43513 19.7576 7.94004 19.5595 7.56433 19.2067C7.16914 18.8837 6.94009 18.4001 6.94052 17.8897V10.2284C6.9356 9.84513 6.77222 9.48102 6.48919 9.22256C5.93815 8.6899 5.06405 8.6899 4.51301 9.22256C4.23607 9.48538 4.0739 9.84678 4.06167 10.2284V17.9236C4.02643 18.4174 3.80317 18.8789 3.43787 19.2131C3.06862 19.576 2.5693 19.7757 2.05164 19.7676C1.77916 19.7741 1.50805 19.727 1.25375 19.629C1.00856 19.5355 0.784447 19.3941 0.594481 19.2131C0.401264 19.0129 0.248074 18.7777 0.143149 18.52C0.0320576 18.282 -0.015692 18.0194 0.00452593 17.7576V10.1188C-0.00239541 9.41527 0.139319 8.71823 0.420396 8.07328C0.699754 7.43786 1.09806 6.86173 1.59386 6.37595C2.09629 5.89132 2.68369 5.50337 3.32665 5.2315C4.00676 4.94697 4.73815 4.80541 5.47531 4.81563" fill="#757575"/>
+                    <path d="M27.802 4.8155C28.7114 4.91412 29.5938 5.1849 30.402 5.61339C31.2028 6.03369 31.9197 6.59754 32.5168 7.27687C33.1065 7.9542 33.5755 8.7279 33.903 9.56415C34.2477 10.4242 34.4244 11.3424 34.4236 12.2689V17.7494C34.4314 18.2912 34.2038 18.8098 33.7998 19.1711C33.3644 19.6097 32.7489 19.8193 32.1363 19.7377C31.5237 19.6561 30.9846 19.2925 30.6792 18.7552L30.402 18.8938L30.1586 19.0324C29.6685 19.2553 29.1578 19.4297 28.6337 19.5531C28.0758 19.6751 27.5058 19.7335 26.9348 19.7272C25.4641 19.746 24.0236 19.3103 22.8099 18.4796C21.6263 17.6771 20.6897 16.5608 20.1052 15.2558C19.8996 14.7881 19.7377 14.3025 19.6216 13.8051C19.3957 12.7891 19.3957 11.7359 19.6216 10.7199C19.7377 10.2224 19.8996 9.7368 20.1052 9.26918C20.6776 7.94714 21.6161 6.81629 22.8099 6.00992C24.0255 5.18326 25.4648 4.74794 26.9348 4.76231H27.802V4.8155ZM26.9348 15.7523C27.3996 15.7514 27.8595 15.6571 28.2871 15.475C28.702 15.309 29.0791 15.0612 29.3961 14.7464C29.7062 14.4255 29.9533 14.0494 30.1247 13.6374C30.3143 13.2002 30.4088 12.7277 30.402 12.2512C30.4032 11.7976 30.3087 11.3488 30.1247 10.9343C29.7607 10.0958 29.0918 9.4269 28.2533 9.06285C27.8387 8.87882 27.39 8.78435 26.9364 8.78559C26.4917 8.78509 26.052 8.87962 25.6469 9.06285C25.2334 9.24657 24.8575 9.50504 24.5379 9.82528C24.2164 10.1438 23.9577 10.52 23.7754 10.9343C23.5914 11.3488 23.4969 11.7976 23.4982 12.2512C23.4896 12.7169 23.5843 13.1788 23.7754 13.6036C23.9584 14.0174 24.217 14.3935 24.5379 14.7126C24.8594 15.0304 25.2349 15.2886 25.6469 15.475C26.0513 15.6603 26.4915 15.7549 26.9364 15.7523" fill="#757575"/>
+                    <path d="M38.166 0.000903562C38.7111 -0.0157518 39.2379 0.198487 39.6167 0.590858C40.0121 0.990018 40.2468 1.52076 40.2759 2.08186V4.43524H46.2045C46.7564 4.41897 47.2874 4.64727 47.6552 5.05904C48.0174 5.45479 48.2156 5.97336 48.2097 6.50975C48.2006 7.04807 47.9759 7.56021 47.5859 7.93144C47.2303 8.32253 46.7282 8.54844 46.1997 8.55525H40.2808V12.0901C40.2816 12.555 40.3759 13.0149 40.558 13.4425C40.7284 13.8656 40.9754 14.2536 41.2866 14.587C41.5998 14.9147 41.9774 15.1743 42.3956 15.3494C42.8331 15.538 43.3054 15.6324 43.7818 15.6266C44.2527 15.642 44.7224 15.5715 45.1681 15.4187C45.547 15.2742 45.8902 15.0493 46.1739 14.7594C46.5622 14.3994 47.0665 14.1901 47.5956 14.1695C48.1376 14.1696 48.6581 14.3812 49.0463 14.7594C49.2391 14.9331 49.393 15.1458 49.4976 15.3832C49.6 15.6133 49.659 15.8603 49.6717 16.1118C49.6837 16.3702 49.6482 16.6287 49.5669 16.8743C49.4837 17.1244 49.341 17.3506 49.1511 17.5335C48.4588 18.2079 47.6478 18.7484 46.759 19.1277C45.8817 19.4993 44.9377 19.688 43.9849 19.6823C42.9542 19.6834 41.932 19.4955 40.9691 19.1277C40.0439 18.7745 39.1964 18.2446 38.4739 17.5674C37.7525 16.8846 37.1763 16.0634 36.7797 15.1527C36.3501 14.1682 36.1257 13.1063 36.1205 12.0321V1.93518C36.1097 1.40288 36.3388 0.893937 36.7443 0.548949C37.1353 0.198733 37.641 0.00378395 38.166 0.000903562Z" fill="#757575"/>
+                    <path d="M52.76 19.7564C52.2418 19.7676 51.7413 19.5674 51.3738 19.2019C50.9932 18.8242 50.7702 18.316 50.75 17.7802V12.095C50.7614 11.1259 50.9738 10.1698 51.3738 9.28708C51.758 8.43198 52.2987 7.65623 52.968 6.9998C53.6494 6.33742 54.4487 5.80823 55.3246 5.43948C56.2258 5.06144 57.1881 4.85008 58.1647 4.81567C58.6998 4.80718 59.2145 5.02077 59.5864 5.40563C59.9588 5.7889 60.1804 6.29375 60.2102 6.82732C60.2266 7.3639 60.0117 7.88167 59.6203 8.24902C59.23 8.62407 58.7108 8.83521 58.1696 8.83897C57.258 8.83154 56.3825 9.19454 55.7437 9.8448C55.433 10.1652 55.1858 10.5414 55.0151 10.9538C54.8255 11.391 54.731 11.8635 54.7378 12.34V17.922C54.7108 18.4188 54.5006 18.888 54.1479 19.2389C53.7619 19.5943 53.2504 19.7816 52.7262 19.7596" fill="#757575"/>
+                    <path d="M63.37 0.136355C63.8952 0.125842 64.3997 0.340571 64.7562 0.72631C65.124 1.10685 65.3237 1.61898 65.3107 2.148C65.3237 2.67703 65.124 3.18916 64.7562 3.5697C64.3997 3.95544 63.8952 4.17017 63.37 4.15965C62.8342 4.16216 62.3168 3.9644 61.9193 3.60516C61.5155 3.20343 61.3011 2.64922 61.3293 2.0803C61.3412 1.56262 61.5671 1.073 61.9532 0.727922C62.3286 0.351014 62.8381 0.138287 63.37 0.136355ZM63.37 4.85116C63.8837 4.84253 64.3759 5.05717 64.7192 5.4395C65.0742 5.83101 65.2826 6.33337 65.3091 6.8612V17.8221C65.3263 18.3349 65.139 18.8336 64.7885 19.2083C64.4129 19.592 63.9035 19.8156 63.3668 19.8321C62.8713 19.8463 62.3886 19.6737 62.0144 19.3486C61.6217 18.9868 61.3751 18.4936 61.3213 17.9623V6.75642C61.3558 6.24687 61.5933 5.77248 61.9806 5.4395C62.3615 5.09491 62.8533 4.8982 63.3668 4.88501" fill="#757575"/>
+                    <path d="M80.218 4.78175C80.7414 4.77981 81.2427 4.99313 81.6042 5.37172C81.9701 5.74191 82.181 6.23765 82.1942 6.75795C82.2027 7.29306 81.9891 7.80777 81.6042 8.17965L81.2915 8.49235L80.9788 8.80506L77.5471 12.2368L74.0799 15.6685H80.2164C81.3322 15.7062 82.2117 16.6316 82.1925 17.7479C82.1744 18.8317 81.3002 19.706 80.2164 19.7241H69.1926C68.6691 19.726 68.1679 19.5127 67.8064 19.1341C67.4167 18.7803 67.2012 18.2739 67.2164 17.7479C67.1662 17.2233 67.3728 16.7069 67.7709 16.3616L75.2936 8.80506H69.1926C68.6692 8.77613 68.1751 8.55382 67.8064 8.18126C67.3891 7.83232 67.1688 7.30141 67.2164 6.75956C67.2012 6.23351 67.4167 5.7271 67.8064 5.37333C68.1629 4.98759 68.6674 4.77286 69.1926 4.78338L80.218 4.78175Z" fill="#757575"/>
+                    <path d="M92.1076 4.8155C93.0171 4.91416 93.8994 5.18494 94.7076 5.61339C95.5085 6.03369 96.2253 6.59754 96.8224 7.27687C97.4122 7.95418 97.8811 8.72788 98.2087 9.56415C98.5536 10.4241 98.7303 11.3423 98.7293 12.2689V17.7494C98.7324 18.2903 98.5057 18.8071 98.1055 19.1711C97.6701 19.6097 97.0546 19.8193 96.442 19.7377C95.8294 19.6561 95.2902 19.2925 94.9849 18.7552L94.7076 18.8938L94.4642 19.0324C93.9741 19.2553 93.4634 19.4297 92.9394 19.5531C92.3815 19.6751 91.8115 19.7335 91.2404 19.7272C89.7698 19.746 88.3292 19.3103 87.1156 18.4796C85.932 17.6771 84.9954 16.5608 84.4108 15.2558C84.2053 14.7881 84.0434 14.3025 83.9272 13.8051C83.7013 12.7891 83.7013 11.7359 83.9272 10.7199C84.0434 10.2224 84.2053 9.73681 84.4108 9.26918C84.9833 7.94714 85.9217 6.81629 87.1156 6.00992C88.3312 5.18326 89.7704 4.74794 91.2404 4.76231H92.1076V4.8155ZM91.2066 15.6829C91.6714 15.6821 92.1313 15.5878 92.559 15.4057C92.9738 15.2397 93.351 14.992 93.6679 14.6771C93.978 14.3562 94.2251 13.9801 94.3965 13.5681C94.5861 13.1309 94.6806 12.6584 94.6738 12.1819C94.675 11.7283 94.5806 11.2795 94.3965 10.865C94.0325 10.0265 93.3636 9.35759 92.5251 8.99354C92.1105 8.80951 91.6618 8.71503 91.2082 8.71628C90.7635 8.71578 90.3238 8.8103 89.9187 8.99354C89.5052 9.17726 89.1293 9.43573 88.8097 9.75597C88.4882 10.0745 88.2296 10.4507 88.0473 10.865C87.8632 11.2795 87.7688 11.7283 87.77 12.1819C87.7614 12.6476 87.8561 13.1095 88.0473 13.5343C88.2303 13.9481 88.4888 14.3242 88.8097 14.6432C89.1339 14.949 89.5093 15.1956 89.9187 15.3718C90.3232 15.5571 90.7633 15.6518 91.2082 15.6491" fill="#757575"/>
+                    <path d="M102.334 4.74634C103.469 4.76482 104.38 5.69038 104.38 6.82569V12.2691C104.376 12.7344 104.47 13.1953 104.657 13.6215C105.011 14.447 105.669 15.1049 106.495 15.459C106.921 15.6459 107.382 15.7404 107.847 15.7363C108.288 15.738 108.726 15.6554 109.136 15.4929C109.545 15.3307 109.921 15.0958 110.245 14.7997C110.569 14.51 110.829 14.1559 111.008 13.7601C111.193 13.3458 111.287 12.8969 111.285 12.4432V6.79184C111.278 6.42111 111.387 6.0575 111.598 5.75216L111.736 5.57808L111.911 5.40399C112.258 5.00181 112.765 4.77353 113.297 4.78019C113.846 4.77749 114.372 5.00349 114.747 5.40399C115.119 5.74486 115.343 6.21741 115.371 6.72091V12.2675C115.378 13.2687 115.177 14.2604 114.781 15.1802C114.016 16.9732 112.588 18.4014 110.795 19.1664C109.864 19.5648 108.861 19.7657 107.849 19.7563C106.874 19.7966 105.902 19.6187 105.005 19.2357C103.206 18.4902 101.757 17.0905 100.95 15.3188C100.537 14.4307 100.324 13.4628 100.326 12.4834V6.79184C100.313 6.26281 100.513 5.75068 100.88 5.37014C101.252 4.9802 101.764 4.75548 102.302 4.74634" fill="#757575"/>
+                    <path d="M119.079 0.000903562C119.624 -0.0157518 120.151 0.198487 120.53 0.590858C120.925 0.990104 121.16 1.52079 121.189 2.08186V4.43524H127.118C127.67 4.41897 128.2 4.64727 128.568 5.05904C128.93 5.45479 129.129 5.97336 129.123 6.50975C129.114 7.04807 128.889 7.56021 128.499 7.93144C128.143 8.32253 127.641 8.54844 127.113 8.55525H121.194V12.0901C121.195 12.555 121.289 13.0149 121.471 13.4425C121.642 13.8656 121.889 14.2536 122.2 14.587C122.513 14.9147 122.89 15.1743 123.309 15.3494C123.746 15.538 124.219 15.6324 124.695 15.6266C125.166 15.642 125.636 15.5715 126.081 15.4187C126.46 15.2742 126.803 15.0493 127.087 14.7594C127.475 14.3994 127.98 14.1901 128.509 14.1695C129.051 14.1696 129.571 14.3812 129.959 14.7594C130.152 14.9332 130.306 15.1458 130.411 15.3832C130.513 15.6133 130.572 15.8603 130.585 16.1118C130.597 16.3702 130.561 16.6287 130.48 16.8743C130.397 17.1244 130.254 17.3507 130.064 17.5335C129.372 18.2079 128.561 18.7484 127.672 19.1277C126.795 19.4991 125.852 19.6878 124.9 19.6823C123.869 19.6834 122.847 19.4955 121.884 19.1277C120.958 18.7747 120.11 18.2447 119.387 17.5674C118.666 16.8846 118.089 16.0634 117.693 15.1527C117.263 14.1682 117.039 13.1063 117.034 12.0321V1.93518C117.023 1.40288 117.252 0.893937 117.657 0.548949C118.048 0.198733 118.554 0.00378395 119.079 0.000903562Z" fill="#757575"/>
+                    <path d="M139.081 5.05898C140.071 5.05517 141.05 5.25602 141.958 5.64894C142.85 6.02241 143.662 6.56359 144.35 7.24311C145.038 7.93181 145.591 8.74312 145.98 9.63516C146.774 11.4952 146.774 13.5989 145.98 15.459C145.598 16.336 145.058 17.135 144.386 17.8155C142.985 19.2284 141.073 20.0159 139.083 19.9997C138.085 20.0081 137.095 19.8196 136.17 19.4452C135.278 19.0881 134.465 18.5578 133.778 17.8849C130.879 14.9617 130.864 10.2524 133.744 7.31081C134.434 6.63391 135.246 6.09309 136.136 5.71664C137.068 5.31363 138.068 5.08996 139.083 5.05737L139.081 5.05898ZM139.083 9.11291C138.63 9.11563 138.182 9.20994 137.766 9.39015C137.354 9.56159 136.978 9.80871 136.657 10.1187C136.332 10.4344 136.073 10.8113 135.894 11.2277C135.706 11.6652 135.611 12.1375 135.617 12.614C135.614 13.0792 135.708 13.5399 135.894 13.9663C136.077 14.3806 136.335 14.7568 136.657 15.0753C136.976 15.3956 137.352 15.654 137.766 15.8377C138.18 16.0228 138.629 16.1173 139.083 16.115C139.548 16.1192 140.009 16.0247 140.435 15.8377C140.851 15.6593 141.228 15.4001 141.544 15.0753C141.851 14.752 142.098 14.3764 142.273 13.9663C142.46 13.5402 142.554 13.0793 142.55 12.614C142.535 11.7069 142.175 10.8395 141.544 10.188C140.904 9.53523 140.032 9.16157 139.118 9.14837" fill="#757575"/>
+                    </svg>
+
+                    <span class="textorodape">Vá dos 0 aos 100 num clique. Siga-nos.</span>
+
+                    <div class="socials">
+                        <a target="_blank" href="https://www.facebook.com/Matrizauto.pt/"><img class="redes" src="facebook.png" alt=""></a>
+                        <a target="_blank" href="https://www.instagram.com/matrizauto/"><img class="redes" src="instagram.png" alt=""></a>
+                        <a target="_blank" href="https://www.linkedin.com/company/matrizauto-o-shopping-dos-carros"><img class="redes" src="linkedin.png" alt=""></a>
+                        <a target="_blank" href="https://twitter.com/matrizautosc/"><img class="redes" src="twitter.png" alt=""></a>
+                    </div>
+
+                    <span class="copyright">©	2022 matrizauto.pt</span>
+            </div>
+
+
+
+
+            <div class="midlerodape">
+
+                <a class="chamadarede" href="">*Chamada para a rede fixa nacional.</a>
+
+            </div>
+
+
+            <divc class="rightrodape">
+
+                <h3 class="titlerodape">Subscrever Newsletter</h3>
+                
+                <input class="insiramail" type="email" placeholder="Insira o seu email">  
+
+                <input class="botaosubscrever" type="submit" value="Subscrever">
+
+            </div>
+
+
+    </div>
+
+    <nav class="navrodape wrap">
+        <a class="linknav" target="_blank" href="https://career2.successfactors.eu/career?company=japgestsa">Recrutamento</a>
+        <a class="linknav" target="_blank" href="https://www.matrizauto.pt/pt/apoio-ao-cliente/">Apoio ao Cliente</a>
+        <a class="linknav" target="_blank" href="https://www.matrizauto.pt/pt/ral/">RAL</a>
+        <a class="linknav" target="_blank" href="https://www.matrizauto.pt/pt/politica-de-privacidade/">Política de Privacidade</a>
+        <a class="linknav" target="_blank" href="https://www.livroreclamacoes.pt/Inicio/">Livro de Reclamações Digital</a>
+        <a class="linknav" target="_blank" href="https://www.matrizauto.pt/pt/intermediacao-de-credito/">Intermediação de Crédito</a>
+        <a class="linknav" target="_blank" href="https://lp.egoi.page/1ge1IeMix/RGPD">Cancelar Subscrição de Comunicação</a>
+        
+    </nav>
+</footer>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
